@@ -1,11 +1,4 @@
-//          o documento(nesse caso index).vai selecionar(o que vai selecionar)
-// let titulo = document.querySelector('h1')
 
-// // titulo.(dentro do html) = 
-// titulo.innerHTML = 'Jogo do número secreto';
-
-// let paragrafo = document.querySelector('p')
-// paragrafo.innerHTML = 'Escolha um número entre 1 a 10';
 let listaDeNumerosSorteados = [];
 let numeroLimite =10;
 let numeroSecreto =  gerarNumeroAleatorio();
@@ -55,7 +48,6 @@ function gerarNumeroAleatorio(){
     }
 
     if(listaDeNumerosSorteados.includes(numeroEscolhido)){
-        //vai gerar um novo número aleatório
         return gerarNumeroAleatorio();
     }else{
         listaDeNumerosSorteados.push(numeroEscolhido);
